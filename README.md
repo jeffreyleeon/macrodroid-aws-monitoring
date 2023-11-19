@@ -1,14 +1,17 @@
-# Welcome to your CDK TypeScript project
+# macrodroid-aws-monitoring
+This project visualise your phone usage patterns by integrating [MacroDroid](https://www.macrodroid.com/), an automation app in Android, and AWS monitoring system using macros. The project aims at,
+- visualising patterns
+- identifying distractions
+- automating alarms
+- answering question such as,
+    - Which apps were opened frequently?
+    - Which apps were sending the most notifications?
+    - How much time were spent on a specific app?
 
-This is a blank project for CDK development with TypeScript.
+Macros can be setup with [MacroDroid](https://www.macrodroid.com/) on Android, defining HTTP request endpoint and send data to AWS APIs which are architected with "Infrastruct as Code" framework [AWS Cloud Development Kit](https://aws.amazon.com/cdk/)(AWS CDK).
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+#### MacroDroid setup
+![macrodroid](assets/images/macrodroid.jpg)
 
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+#### AWS Monitoring
+![aws](assets/images/aws-monitoring.png)
